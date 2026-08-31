@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://mogt74s7c2cf"]
 
-[ext_resource type="Script" uid="uid://b5wok0ljycj4v" path="res://Scenes/player.gd" id="1_cvnsp"]
+[ext_resource type="Script" uid="uid://b5wok0ljycj4v" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://dnkkifnwdv7nn" path="res://Sprites/Sanne_trainerv3.png" id="2_6t5aa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d7522"]
-size = Vector2(127, 127)
+size = Vector2(6, 3)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vgqql"]
 atlas = ExtResource("2_6t5aa")
@@ -157,11 +157,12 @@ animations = [{
 script = ExtResource("1_cvnsp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=201957734]
-position = Vector2(0.5, 0.5)
+position = Vector2(0, 4.5)
 shape = SubResource("RectangleShape2D_d7522")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=98392381]
 texture_filter = 1
+scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_d7522")
 animation = &"walk_up"
 autoplay = "idle"

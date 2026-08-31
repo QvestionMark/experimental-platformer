@@ -28,6 +28,7 @@ func _process(delta: float) -> void:
 			animSprite.play("walk_down")
 		else:
 			animSprite.play("walk_up")
+	velocity = velocity.normalized()
 	velocity *= 50
 	move_and_slide()
 		
