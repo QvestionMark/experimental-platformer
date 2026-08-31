@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o2pvk57mtplv"
-path="res://.godot/imported/Sanne_trainerv1.png-c3304c55dd9907551191007a65cad790.ctex"
+uid="uid://dnkkifnwdv7nn"
+path="res://.godot/imported/Sanne_trainerv3.png-43fc5f10bff3b787ff87f7a524ab2650.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sanne_trainerv1.png"
-dest_files=["res://.godot/imported/Sanne_trainerv1.png-c3304c55dd9907551191007a65cad790.ctex"]
+source_file="res://Sprites/Sanne_trainerv3.png"
+dest_files=["res://.godot/imported/Sanne_trainerv3.png-43fc5f10bff3b787ff87f7a524ab2650.ctex"]
 
 [params]
 
