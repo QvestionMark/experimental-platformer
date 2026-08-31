@@ -15,16 +15,18 @@ func _process(delta: float) -> void:
 		velocity.x -= 1
 	if Input.is_action_pressed("walk_right"):
 		velocity.x += 1
+	
 	if velocity.length_squared() == 0:
-		animSprite.stop()
+		animSprite.pause()
 		animSprite.frame = 1
+		animSprite.frame_progress = 1
 	elif velocity.x != 0:
-		if velocity.x == 1:
+		if velocity.x > 0:
 			animSprite.play("walk_right")
 		else:
 			animSprite.play("walk_left")
 	else:
-		if velocity.y == 1:
+		if velocity.y > 0:
 			animSprite.play("walk_down")
 		else:
 			animSprite.play("walk_up")
