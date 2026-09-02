@@ -157,11 +157,12 @@ animations = [{
 script = ExtResource("1_cvnsp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=201957734]
-position = Vector2(0, 4.5)
+position = Vector2(0, -1.75)
 shape = SubResource("RectangleShape2D_d7522")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=98392381]
 texture_filter = 1
+position = Vector2(0, -6.25)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_d7522")
 animation = &"walk_up"

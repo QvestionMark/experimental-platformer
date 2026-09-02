@@ -1,4 +1,6 @@
+class_name Player
 extends CharacterBody2D
+
 var animSprite : AnimatedSprite2D
 
 func _ready() -> void:
