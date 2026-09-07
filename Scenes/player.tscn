@@ -163,8 +163,8 @@ shape = SubResource("RectangleShape2D_d7522")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=98392381]
 texture_filter = 1
-position = Vector2(0, -6.25)
-scale = Vector2(0.6, 0.6)
+position = Vector2(0, -8.975)
+scale = Vector2(0.6, 0.85952383)
 sprite_frames = SubResource("SpriteFrames_d7522")
 animation = &"walk_up"
 autoplay = "idle"
