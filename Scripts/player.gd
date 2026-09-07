@@ -35,7 +35,7 @@ func _process(delta: float) -> void:
 		else:
 			animSprite.play("walk_up")
 	velocity = velocity.normalized()
-	velocity *= 50 * scale.x
+	velocity *= 75 * scale.x
 	move_and_slide()
 	
 	flashlight.rotation = flashlight.global_position.direction_to(get_global_mouse_position()).angle()
