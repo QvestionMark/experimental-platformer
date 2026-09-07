@@ -173,4 +173,4 @@ autoplay = "idle"
 zoom = Vector2(5, 5)
 
 [node name="flashlight" parent="." unique_id=1445627752 instance=ExtResource("3_6t5aa")]
-position = Vector2(0, -2)
+position = Vector2(25, 18)
