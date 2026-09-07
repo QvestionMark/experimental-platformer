@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://3dacar4lt71e"]
+
+[sub_resource type="Gradient" id="Gradient_b0acp"]
+offsets = PackedFloat32Array(0, 0.8)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_d7522"]
+gradient = SubResource("Gradient_b0acp")
+width = 128
+height = 128
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.9000001, 0.9000001)
+
+[node name="flashlight" type="Node2D" unique_id=1445627752]
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1707455472]
+color = Color(0.9999984, 0.9988944, 0.7500093, 1)
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_d7522")

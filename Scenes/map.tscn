@@ -57,6 +57,11 @@ sources/0 = SubResource("TileSetAtlasSource_ci6au")
 [sub_resource type="TileMapPattern" id="TileMapPattern_ci6au"]
 tile_data = PackedInt32Array(0, 131072, 1, 1, 0, 1, 4, 0, 1, 7, 0, 1, 10, 196608, 4)
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_26yhd"]
+closed = false
+cull_mode = 2
+polygon = PackedVector2Array(-7.5, -3.5, -7.5, -3.5, 7.5, -3.5)
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p3ir5"]
 resource_name = "Map"
 texture = ExtResource("1_ci6au")
@@ -101,10 +106,12 @@ texture_region_size = Vector2i(15, 15)
 3:4/0 = 0
 3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.5, -4.5, -7.5, -4.5, -7.5, 4.5, -0.5, 4.5, 2.5, 3.5, 2.5, -7.5, -2.5, -7.5, -2.5, -5.5)
 0:1/0 = 0
+0:1/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_26yhd")
 0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.5, -4.5, 7.5, -4.5, 7.5, 4.5, -7.5, 4.5)
 
 [sub_resource type="TileSet" id="TileSet_myvm1"]
 tile_size = Vector2i(5, 5)
+occlusion_layer_0/light_mask = 1
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_p3ir5")
 pattern_0 = SubResource("TileMapPattern_ci6au")

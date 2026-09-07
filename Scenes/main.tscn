@@ -10,3 +10,6 @@ y_sort_enabled = true
 
 [node name="player" parent="." unique_id=1556499869 instance=ExtResource("1_jjgbg")]
 position = Vector2(100, 70)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1495903988]
+color = Color(0.15967038, 0.15967038, 0.15967035, 1)

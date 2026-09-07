@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b5wok0ljycj4v" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://dnkkifnwdv7nn" path="res://Sprites/Sanne_trainerv3.png" id="2_6t5aa"]
+[ext_resource type="PackedScene" uid="uid://3dacar4lt71e" path="res://Scenes/flashlight.tscn" id="3_6t5aa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d7522"]
 size = Vector2(6, 3)
@@ -170,3 +171,6 @@ autoplay = "idle"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=187986623]
 zoom = Vector2(5, 5)
+
+[node name="flashlight" parent="." unique_id=1445627752 instance=ExtResource("3_6t5aa")]
+position = Vector2(0, -2)

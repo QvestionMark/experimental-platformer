@@ -2,9 +2,11 @@ class_name Player
 extends CharacterBody2D
 
 var animSprite : AnimatedSprite2D
+var flashlight : Node2D
 
 func _ready() -> void:
 	animSprite = $AnimatedSprite2D
+	flashlight = $flashlight
 
 func _process(delta: float) -> void:
 	velocity = Vector2()
@@ -35,4 +37,6 @@ func _process(delta: float) -> void:
 	velocity = velocity.normalized()
 	velocity *= 50 * scale.x
 	move_and_slide()
+	
+	flashlight.rotation = flashlight.global_position.direction_to(get_global_mouse_position()).angle()
 		
