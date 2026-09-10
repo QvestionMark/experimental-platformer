@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://r0lvqdwnvlli" path="res://Sprites/Tilemap_Grass_V2.png" id="1_ci6au"]
 [ext_resource type="PackedScene" uid="uid://chkbstskwjoue" path="res://Scenes/coin.tscn" id="2_26yhd"]
+[ext_resource type="PackedScene" uid="uid://fifpwftwx0hi" path="res://Scenes/platform.tscn" id="3_p3ir5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ci6au"]
 resource_name = "Map"
@@ -143,3 +144,8 @@ position = Vector2(157.5, 75)
 
 [node name="coin4" parent="Coins" unique_id=683741865 instance=ExtResource("2_26yhd")]
 position = Vector2(352, 97)
+
+[node name="Misc" type="Node2D" parent="." unique_id=258164875]
+
+[node name="platform" parent="Misc" unique_id=1380877963 instance=ExtResource("3_p3ir5")]
+position = Vector2(208, 172)

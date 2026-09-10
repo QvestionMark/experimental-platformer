@@ -8,7 +8,7 @@ func _ready() -> void:
 	animSprite = $AnimatedSprite2D
 	flashlight = $flashlight
 
-func _process(delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	velocity = Vector2()
 	
 	if Input.is_action_pressed("walk_up"):
@@ -35,7 +35,8 @@ func _process(delta: float) -> void:
 		else:
 			animSprite.play("walk_up")
 	velocity = velocity.normalized()
-	velocity *= 75 * scale.x
+	velocity *= 75 * scale.x 
+	velocity += get_gravity() * delta
 	move_and_slide()
 	
 	flashlight.rotation = flashlight.global_position.direction_to(get_global_mouse_position()).angle()
